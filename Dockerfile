@@ -23,7 +23,6 @@ COPY web/dist/ /app/
 # Set environment variables
 ENV HTTP_ADDR=:9999 \
     WS_LISTEN_PATH=/ocpp \
-    METER_DATA_DIR=/data/meter_data \
     ACTIVITY_LOG_DIR=/data/activity_logs \
     REPORT_DIR=/data/reports \
     CARDS_DIR=/data/cards \

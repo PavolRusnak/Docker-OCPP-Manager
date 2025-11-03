@@ -10,10 +10,9 @@ services:
     environment:
       - HTTP_ADDR=:9999
       - WS_LISTEN_PATH=/ocpp
-      - METER_DATA_DIR=/data/meter_data
       - ACTIVITY_LOG_DIR=/data/activity_logs
       - REPORT_DIR=/data/reports
-      - CARDS_DIR=/data/cards
+      - CARDS_DIR=/data/RFID
       - EVENTS_DIR=/data/events
       - TIMEZONE=America/Vancouver
       - POLL_MINUTES=15
@@ -23,7 +22,7 @@ services:
       - METER_RETRY_MINUTES=5
       # 15-minute total energy polling settings
       - POLL_INTERVAL_SECONDS=900
-      - CSV_DIR=/data/meter
+      - CSV_DIR=/data/meter_values
       - TRIGGER_TIMEOUT_MS=10000
       - TRIGGER_RETRY=1
       - ENABLE_CLOCK_ALIGNED=1
